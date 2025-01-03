@@ -4,9 +4,14 @@ import Slide_2 from "./Slides/slide2/Slide_2.jsx";
 import { enableFullscreenToggleOnF } from "./scripts/FullscreenMode.js";
 import Slide_3 from "./Slides/slide3/Slide_3.jsx";
 import Slide_4 from "./Slides/slide4/Slide_4.jsx";
+import Slide_5 from "./Slides/Slide5/Slide_5.jsx";
+import Slide_7 from "./Slides/Slide7/Slide_7.jsx";
+import Slide_6 from "./Slides/slide6/Slide_6.jsx";
+import Slide_8 from "./Slides/slide8/Slide_8.jsx";
+import Slide_9 from "./Slides/slide9/Slide_9.jsx";
 
 function App() {
-    const slides = [<Slide_1 />, <Slide_2 />, <Slide_3/>, <Slide_4/>];
+    const slides = [<Slide_1 />, <Slide_2 />, <Slide_3/>, <Slide_4/>, <Slide_5/>,<Slide_6/>, <Slide_7/>, <Slide_8/>, <Slide_9/>];
     const [currentSlide, setCurrentSlide] = useState(() => {
         const savedSlide = localStorage.getItem("currentSlide");
         return savedSlide !== null ? parseInt(savedSlide, 10) : 0;
